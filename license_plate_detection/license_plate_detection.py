@@ -13,8 +13,8 @@ from matplotlib import pyplot as plt
 from PIL import Image
 
 # This is needed since the notebook is stored in the object_detection folder.
-sys.path.append("..")
-from object_detection.utils import ops as utils_ops
+sys.path.append("..\\..\\..\\..\\Documents\\TensorFlow\\models\\research")
+# from object_detection.utils import ops as utils_ops
 
 if StrictVersion(tf.__version__) < StrictVersion('1.9.0'):
   raise ImportError('Please upgrade your TensorFlow installation to v1.9.* or later!')
@@ -24,8 +24,8 @@ from utils import label_map_util
 
 from utils import visualization_utils as vis_util
 MODEL_NAME = 'inference_graph'
-PATH_TO_FROZEN_GRAPH = 'simon/training/' + MODEL_NAME + '/frozen_inference_graph.pb'
-PATH_TO_LABELS = 'simon/training/labelmap.pbtxt'
+PATH_TO_FROZEN_GRAPH = 'training/' + MODEL_NAME + '/frozen_inference_graph.pb'
+PATH_TO_LABELS = 'training/labelmap.pbtxt'
 
 detection_graph = tf.Graph()
 with detection_graph.as_default():
