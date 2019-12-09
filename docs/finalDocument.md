@@ -244,7 +244,7 @@ Z tohto dôvodu má však tento algoritmus problém s detekciou malých objektov
 To, ako pracuje YOLO spolu s jeho architektúrou môžme vidieť na obrázkoch nižšie.
 
 <img src="img/yolo.PNG" alt="YOLO" width="500"/>
-<img src="img/yoloModel.PNG" alt="YOLO1" width="700"/>
+<img src="img/yoloModel.png" alt="YOLO1" width="700"/>
 
 
 Porovnanie týchto dvoch architektúr (+ R-CNN a Fast R-CNN) môžme vidieť na grafe, ktorý nám ukazuje závislosť presnosti a rýchlosti detekcie objektu.
