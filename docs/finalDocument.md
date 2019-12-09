@@ -274,7 +274,7 @@ Výstup z trénovania je možné vidieť v súbore /training/YOLO_training_logs.
 
 V rámci nášho experimentu, sme chceli jednotlivé architektúry porovnať na zariadení Nvidia Jetson Nano, ktoré bolo spomínané v našom návrhu riešenia. Najprv sme sa pokúšali spojazdniť YOLO architektúru, nakoľko sfunkčniť ju na bežnom PC bolo oveľa jednoduchšie než Faster R-CNN, nakoľko nevyžadovala tak zdĺhavý proces inštalácie.
 
-Snaha bola vytvoriť Docker image, ktorý by mal pripravené prostredie tak, aby bolo možné danú implementáciu YOLO na ňom spustiť. Dockerfiles k jednotlivým imageom môžme vidieť v adresári ```docker/**``` To sa nám aj podarilo, no žiaľ spojazdniť tento image na spomínanom zariadení z neznámych dôvodov opakovane zlyhávalo. To nám zmarilo nádej, akýmkoľvek spôsobom porovnať tieto architektúry na tomto zariadení a tak sme sa teda museli uspokojiť s porovnaním na PC s integrovanou grafickou kartou. 
+Snaha bola vytvoriť Docker image, ktorý by mal pripravené prostredie tak, aby bolo možné danú implementáciu YOLO na ňom spustiť. Dockerfiles k jednotlivým imageom môžme vidieť v adresári ```docker/**```. Zbuildovany predpripraveny docker pre YOLO architekturu je dostupny na DockerHube pod nazvom ```matozelenak/yolo-docker:v1.1``` To sa nám aj podarilo, no žiaľ spojazdniť tento image na spomínanom zariadení z neznámych dôvodov opakovane zlyhávalo. To nám zmarilo nádej, akýmkoľvek spôsobom porovnať tieto architektúry na tomto zariadení a tak sme sa teda museli uspokojiť s porovnaním na PC s integrovanou grafickou kartou. 
 
 ## Vyhodnotenie experimentov
 
